@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <form action="./demo.html" method="get">
+        <!-- Chú thích dùng label hoặc placeholder  -->
+        <label for="name">Name</label>
+        <input type="text" id="name" placeholder="Enter Name" maxlength="9">
+
+        <!-- hiện thông tin nhưng khong cho chình sửa  -->
+        <input type="text" value="001" readonly>
+        <input type="text" value="001" disabled>
+        <br>
+        <input type="number" name="number" id="" placeholder=" Enter Number" min="2" max="55">
+        <input type="email" name="email" id="" placeholder="Enter email">
+        <input type="password" name="password" id="" placeholder="Enter password">
+
+        <!-- Báo lỗi khi không nhập thông tin  -->
+        <input type="text" placeholder="Enter address" required>
+        <br>
+
+        <input type="tel" pattern="[0-9]{3}-[0-9]{4}-[0-9]{3}" placeholder="123-1234-123">
+        <input type="date" name="" id="">
+        <input type="file" name="" id=""> <br>
+        <textarea name="" id="" cols="100" rows="20"></textarea>
+        <!-- combobox / dropdown  -->
+        <select name="" id="" >
+            <option value="">Chọn  loại xe</option>
+            <optgroup>
+               <option value="">Xe máy</option>
+                <option value="">Honda</option>
+                <option value="">yamaha</option>
+            </optgroup>
+            <optgroup>
+                <option value="">Xe Điện</option>
+                 <option value="">Honda</option>
+                 <option value="">VinFast</option>
+             </optgroup>
+           
+            
+        </select> <br>
+           <!-- chọn nhiều mục  -->
+        <label for="subject">Math</label>
+        <input type="checkbox" name="subject" id="" value="Math"> 
+
+        <label for="subject">History</label>
+            <input type="checkbox" name="subject" id="History">
+
+            <label for="subject">Phy</label>
+            <input type="checkbox" name="subject" id="Phy">
+
+            <label for="subject">Bio</label>
+            <input type="checkbox" name="subject" id="Bio"> <br>
+
+              <!-- Giới tính  -->
+            <input type="radio" name="gender" id="male" value="M">
+            <label for="male">Male</label> 
+           
+                <input type="radio" name="gender" id="female" value="F">
+                <label for="female">Female</label>
+            <fieldset>
+                <legend>Thông tin cá nhân </legend>
+                <input type="text" placeholder="Full name">
+
+
+
+            </fieldset>
+
+            <br>
+            <button type="submit">Submit</button>
+            <input type="button" value="Button">
+            <input type="reset" value="Reset"> <br>
+
+
+
+    </form>
+</body>
+
+</html>
